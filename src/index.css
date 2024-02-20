@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: rubik;
+    src: url('/public/assets/fonts/Rubik-VariableFont_wght.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+}
+
+body#light{
+    background-color: #F4F6FA;
+    background-image: url('/public/assets/images/pattern-background-mobile-light.svg');
+}
+
+body#dark{
+    background-color: #313E51;
+    background-image: url('/public/assets/images/pattern-background-mobile-dark.svg');
+}
+
+@media screen and (min-width: 768px){
+    body#light{
+        background-image: url('/public/assets/images/pattern-background-tablet-light.svg');
+    }
+
+    body#dark{
+        background-image: url('/public/assets/images/pattern-background-tablet-dark.svg');
+    }
+}
+
+@media screen and (min-width: 992px){
+    body#light{
+        background-image: url('/public/assets/images/pattern-background-desktop-light.svg');
+    }
+
+    body#dark{
+        background-image: url('/public/assets/images/pattern-background-desktop-dark.svg');
+    }
+}

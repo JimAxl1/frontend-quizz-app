@@ -1,0 +1,47 @@
+.container {
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.6rem;
+}
+
+.container.HTML {
+  background-color: #FFF1E9;
+}
+
+.container.CSS {
+  background-color: #E0FDEF;
+}
+
+.container.JavaScript {
+  background-color: #EBF0FF;
+}
+
+.container.Accessibility {
+  background-color: #F6E7FF;
+}
+
+.img {
+  width: 2.8571rem;
+  height: 2.8571rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+  .img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+/*# sourceMappingURL=Logo.module.css.map */

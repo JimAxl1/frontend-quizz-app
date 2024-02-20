@@ -1,0 +1,31 @@
+.button {
+  border-radius: 1.2rem;
+  background-color: #A729F5;
+  -webkit-box-shadow: 0rem 1.6rem 4rem 0rem rgba(143, 160, 193, 0.14);
+          box-shadow: 0rem 1.6rem 4rem 0rem rgba(143, 160, 193, 0.14);
+  color: #FFF;
+  font-family: rubik;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 100%;
+  border: none;
+  width: 100%;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 3.2rem;
+    font-size: 2.8rem;
+    border-radius: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button:hover {
+    cursor: pointer;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), #A729F5;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), #A729F5;
+  }
+}
+/*# sourceMappingURL=Button.module.css.map */

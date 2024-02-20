@@ -1,0 +1,52 @@
+.header{
+    min-height: 7.2rem;
+    padding: 1.6rem 2.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.text{
+    font-family: rubik;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 0rem;
+    &.light{
+        color: #313E51;
+    }
+    &.dark{
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        min-height: 13.6rem;
+        padding: 4rem 6.4rem;
+    }
+
+    .text{
+        font-size: 2.8rem;
+    }
+
+    .container{
+        gap: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .header{
+        padding: 8.3rem 4rem;
+        width: 100%;
+        max-width: 124rem;
+        margin: auto;
+    }
+}

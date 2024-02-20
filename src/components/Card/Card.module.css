@@ -1,0 +1,141 @@
+.container {
+  width: 100%;
+  min-height: 6.4rem;
+  padding: 0.9rem;
+  border-radius: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.light {
+  background-color: #FFF;
+  border: 0.3rem solid #FFF;
+  -webkit-box-shadow: 0rem 1.6rem 4rem 0rem rgba(143, 160, 193, 0.14);
+          box-shadow: 0rem 1.6rem 4rem 0rem rgba(143, 160, 193, 0.14);
+}
+
+.container.dark {
+  background-color: #3B4D66;
+  border: 0.3rem solid #3B4D66;
+  -webkit-box-shadow: 0rem 1.6rem 4rem 0rem rgba(49, 62, 81, 0.14);
+          box-shadow: 0rem 1.6rem 4rem 0rem rgba(49, 62, 81, 0.14);
+}
+
+.container.selected {
+  border: 0.3rem solid #A729F5;
+}
+
+.container.selected .icon {
+  background-color: #A729F5;
+  color: #FFF;
+}
+
+.container.selected.correct {
+  border: 0.3rem solid #26D782;
+}
+
+.container.selected.correct .icon {
+  background-color: #26D782;
+  color: #FFF;
+}
+
+.container.selected.incorrect {
+  border: 0.3rem solid #EE5454;
+}
+
+.container.selected.incorrect .icon {
+  background-color: #EE5454;
+  color: #FFF;
+}
+
+.text {
+  margin: 0rem;
+  font-family: rubik;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.text.light {
+  color: #313E51;
+}
+
+.text.dark {
+  color: #ffffff;
+}
+
+.icon {
+  min-width: 4rem;
+  min-height: 4rem;
+  border-radius: 0.6rem;
+  background-color: #F4F6FA;
+  margin-right: 1.6rem;
+  color: #626C7F;
+  font-family: rubik;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.answer {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: auto;
+}
+
+.gray {
+  background-color: #F4F6FA;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-height: 8rem;
+    border-radius: 2.4rem;
+  }
+  .text {
+    font-size: 2.8rem;
+  }
+  .icon {
+    margin-right: 3.2rem;
+    border-radius: 1.2rem;
+    min-width: 5.6rem;
+    min-height: 5.6rem;
+    font-size: 2.8rem;
+  }
+  .answer {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    min-height: 9.6rem;
+    padding: 1.5rem 2rem;
+  }
+  .container:hover {
+    cursor: pointer;
+  }
+  .container:hover .icon {
+    color: #A729F5;
+    background-color: #F6E7FF;
+  }
+}
+/*# sourceMappingURL=Card.module.css.map */

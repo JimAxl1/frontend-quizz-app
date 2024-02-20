@@ -1,0 +1,121 @@
+.container{
+    width: 100%;
+    min-height: 6.4rem;
+    padding: 0.9rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &.light{
+        background-color: #FFF;
+        border: 0.3rem solid #FFF;
+        box-shadow: 0rem 1.6rem 4rem 0rem rgba(143, 160, 193, 0.14);
+    }
+    &.dark{
+        background-color: #3B4D66;
+        border: 0.3rem solid #3B4D66;
+        box-shadow: 0rem 1.6rem 4rem 0rem rgba(49, 62, 81, 0.14);
+    }
+    &.selected{
+        border: 0.3rem solid #A729F5;
+        .icon{
+            background-color: #A729F5;
+            color: #FFF;
+        }
+    }
+    &.selected.correct{
+        border: 0.3rem solid #26D782;
+        .icon{
+            background-color: #26D782;
+            color: #FFF;
+        }
+    }
+    &.selected.incorrect{
+        border: 0.3rem solid #EE5454;
+        .icon{
+            background-color: #EE5454;
+            color: #FFF;
+        }
+    }
+}
+
+.text{
+    margin: 0rem;
+    font-family: rubik;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 100%;
+    &.light{
+        color: #313E51;
+    }
+    &.dark{
+        color: #ffffff;
+    }
+}
+
+.icon{
+    min-width: 4rem;
+    min-height: 4rem;
+    border-radius: 0.6rem;
+    background-color: #F4F6FA;
+    margin-right: 1.6rem;
+    color: #626C7F;
+    font-family: rubik;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer{
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-left: auto;
+}
+
+.gray{
+    background-color: #F4F6FA;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        min-height: 8rem;
+        border-radius: 2.4rem;
+    }
+
+    .text{
+        font-size: 2.8rem;
+    }
+
+    .icon{
+        margin-right: 3.2rem;
+        border-radius: 1.2rem;
+        min-width: 5.6rem;
+        min-height: 5.6rem;
+        font-size: 2.8rem;
+    }
+
+    .answer{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        min-height: 9.6rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .container:hover{
+        cursor: pointer;
+        
+        .icon{
+            color: #A729F5;
+            background-color: #F6E7FF;
+        }
+        
+    }
+}

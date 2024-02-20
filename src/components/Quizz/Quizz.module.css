@@ -1,0 +1,122 @@
+.container {
+  padding: 3.2rem 2.4rem;
+}
+
+.counter {
+  font-family: rubik;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0rem;
+}
+
+.counter.light {
+  color: #626C7F;
+}
+
+.counter.dark {
+  color: #ABC1E1;
+}
+
+.text {
+  font-family: rubik;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 1.2rem 0rem 0rem 0rem;
+}
+
+.text.light {
+  color: #313E51;
+}
+
+.text.dark {
+  color: #FFFFFF;
+}
+
+.progress {
+  height: 1.6rem;
+  width: 100%;
+  border-radius: 2.5rem;
+  margin: 2.4rem 0rem 4rem 0rem;
+}
+
+.progress::-webkit-progress-bar {
+  border-radius: 99.9rem;
+  padding: 0.4rem;
+}
+
+.progress.light::-webkit-progress-bar {
+  background-color: #FFF;
+}
+
+.progress.dark::-webkit-progress-bar {
+  background-color: #3B4D66;
+}
+
+.progress::-webkit-progress-value {
+  background-color: #A729F5;
+  border-radius: 10.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0.9rem 6.4rem;
+  }
+  .counter {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 3.6rem;
+    margin-top: 2.7rem;
+  }
+  .progress {
+    margin: 4.4rem 0rem 6.8rem 0rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 3rem 38.3rem auto;
+        grid-template-rows: 3rem 38.3rem auto;
+    -ms-grid-columns: 40.0862068966% 56.4rem;
+        grid-template-columns: 40.0862068966% 56.4rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0rem 4rem;
+    width: 100%;
+    max-width: 124rem;
+    margin: auto;
+  }
+  .counter {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  .text {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  .progress {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    margin: 0rem;
+  }
+}
+/*# sourceMappingURL=Quizz.module.css.map */

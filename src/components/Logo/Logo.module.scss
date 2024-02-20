@@ -1,0 +1,37 @@
+.container{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6rem;
+    &.HTML{
+        background-color: #FFF1E9;
+    }
+    &.CSS{
+        background-color: #E0FDEF;
+    }
+    &.JavaScript{
+        background-color: #EBF0FF;
+    }
+    &.Accessibility{
+        background-color: #F6E7FF;
+    }
+}
+
+.img{
+    width: 2.8571rem;
+    height: 2.8571rem;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 5.6rem;
+        height: 5.6rem;
+    }
+
+    .img{
+        width: 4rem;
+        height: 4rem;
+    }
+}
